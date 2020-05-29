@@ -1,0 +1,54 @@
+[
+  {
+    "score": 1.6493673,
+    "show": {
+      "id": 23863,
+      "url": "http://www.tvmaze.com/shows/23863/running-russell-simmons",
+      "name": "Running Russell Simmons",
+      "type": "Reality",
+      "language": "English",
+      "genres": [],
+      "status": "Ended",
+      "runtime": 60,
+      "premiered": "2010-11-02",
+      "officialSite": "http://www.oxygen.com/running-russell-simmons",
+      "schedule": {
+        "time": "22:00",
+        "days": ["Tuesday"]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 0,
+      "network": {
+        "id": 79,
+        "name": "Oxygen",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 209441,
+        "imdb": "tt1757399"
+      },
+      "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/90/225368.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/90/225368.jpg"
+      },
+      "summary": "<p>A reality series following hip-hop and fashion mogul Russell Simmons and his band of assistants as they help to manage his business deals, family life, and party planning.</p>",
+      "updated": 1521529771,
+      "_links": {
+        "self": {
+          "href": "http://api.tvmaze.com/shows/23863"
+        },
+        "previousepisode": {
+          "href": "http://api.tvmaze.com/episodes/1021025"
+        }
+      }
+    }
+  }
+]

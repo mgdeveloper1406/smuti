@@ -1,0 +1,564 @@
+body {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;/*Centering the page*/
+  /* background-color:#464646;*/
+}
+
+/*Navigation bar*/
+.navigation {
+  position:fixed; /*Navigation stays up even scrolling the page down*/
+  z-index: 10001;
+  width: 100%;
+  top: 0;
+  background-color: white;
+
+}
+.navigation ul {
+  list-style-type:none; /*Deleting default bulleting*/
+  margin:0; /*Deleting default margin*/
+  padding:0;
+  overflow: hidden;
+}
+.navigation li {
+  float:right; /*Floatin items from left to right*/
+}
+.navigation li.name {
+  float: left;
+  display: block; /*Give link dimensions ("box") with width and height*/
+  font-family: "Source Sans Pro Light";
+  width: 170px;
+  color:black;
+  text-decoration:none; /*Deleting default styles*/
+  padding: 20px;
+  text-transform:uppercase;
+}
+.navigation li a {
+  display: inline-block; /*Give link dimensions ("box") with width and height*/
+  font-family: "Source Sans Pro Light";
+  color:black;
+  text-decoration:none; /*Deleting default styles*/
+  padding: 20px;
+  text-transform:uppercase;
+}
+.navigation li a:hover{
+  background-color: #d5c6ac;
+}
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  text-align: right;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  display: none;
+}
+
+/*COMMON*/
+h1 {
+  font-size: 34px;
+  font-family: "Source Sans Pro Light";
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Source Sans Pro Light";
+}
+h3 {
+  font-size: 20px;
+  font-family: "Source Sans Pro Light";
+}
+
+p {
+  font-size: 19px;
+  font-family: "Source Sans Pro Light";
+}
+
+
+/*Footer*/
+#footer {
+  width:100%;
+  height:150px;
+  color:black;
+  background-color: lightgrey;
+  text-align:center;
+  padding-top:50px;
+  font-family: "Source Sans Pro Light", sans-serif;
+  z-index: 99000;
+}
+
+/*HOME*/
+
+.header {
+  width:100%;
+  height: 550px;
+  background-image: url('header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+.space0 {
+  width:100%;
+  margin: 0;
+}
+
+.header h1{
+  font-family: "Lithos Pro Regular";
+  font-size:60px;
+  color:white;
+  margin: 15% 10% 20% 45%;
+  text-transform:uppercase;
+}
+
+.wrapper {
+  width: 100%;
+  height: 680px;
+  margin:0;
+  display: flex;
+  top: 200px;
+  z-index: 99;
+}
+
+.outside0 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: white;
+  margin: 1% 15%;
+  padding: 2% 5% 5% 5%;
+  position: absolute;
+}
+.box h1 {
+  font-size: 34px;
+  font-family: "Source Sans Pro Light";
+  margin-bottom: 4%;
+}
+.box p {
+  font-size: 19px;
+  font-family: "Source Sans Pro Light";
+  line-height: 1.8;
+}
+
+/*SMOOTHIEBAR*/
+
+.wrappers {
+width: 100%;
+height: 200px;
+background-color: #d5c6ac;
+}
+
+.outsides {
+  margin: 3% 10%;
+  width: 80%;
+  height: 100%;
+}
+
+.outsides h1 {
+  padding-top: 5%;
+  font-size: 34px;
+  font-family: "Source Sans Pro Light";
+}
+.outsides p {
+  font-size: 19px;
+  font-family: "Source Sans Pro Light";
+  line-height: 1.1;
+}
+
+/* SMOOTHIE LIST */
+#wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); */
+}
+
+#reseptinhaku {
+  display: flex;
+  margin: 2% 10% 1% 10%;
+  width: 80%;
+}
+
+#popular h1 {
+  text-transform:uppercase;
+  margin-top: 0;
+  font-family: "Lithos Pro Regular";
+  font-size: 28px;
+}
+
+#haku {
+  position: absolute;
+  left: 43%;
+}
+
+#smoothielista {
+  width: 82%;
+  margin: 0 9% 2% 9%;
+}
+
+#smoothielista ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  font-size: 8.5px;
+  overflow: hidden;
+  word-wrap: break-word;
+  background-color: white;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro Light";
+  font-weight: 300;
+}
+
+#smoothielista ul li {
+  width: 25%;
+  text-decoration: none;
+}
+
+#smoothielista img {
+  padding: 0 5%;
+  width: 90%;
+}
+
+#smoothielista ul li a {
+  text-decoration: none;
+  color: black;
+
+}
+
+/*PAGE2*/
+.wrapperp {
+  width: 100%;
+  height: 900px;
+}
+
+.outsidep {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 0;
+  height: 750px;
+  background-color: #d5c6ac;;
+}
+
+.boxp {
+  width: 60%;
+  margin: 5% 40%;
+  padding: 1% 5% 5% 5%;
+  position: absolute;
+}
+.boxp h1 {
+  font-size: 30px;
+  font-family: "Source Sans Pro Light";
+}
+
+.boxp p {
+  font-size: 19px;
+  font-family: "Source Sans Pro Light";
+}
+.boxp li {
+line-height: 1.7;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+
+.toinen {
+  font-size: 16px;
+  font-family: "Source Sans Pro Light";
+  width: 60%;
+}
+
+.new, .kuva {
+  font-size: 16px;
+  font-family: "Source Sans Pro Light";
+}
+
+.button {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2% 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+}
+
+.kuva img {
+  position: absolute;
+  left: 20%;
+  top: 21%;
+}
+
+
+/*VIDEO*/
+.wrapperv {
+  width: 100%;
+  height: 740px;
+}
+
+.outsidev {
+  width: 100%;
+  margin: 3% 0;
+  padding: 0;
+  height: 220px;
+  background-color: #d5c6ac;;
+}
+
+.boxv {
+  width: 60%;
+  margin: 1% 15%;
+  padding: 2% 5% 2% 5%;
+  position: absolute;
+}
+.boxv h1 {
+  font-size: 34px;
+  font-family: "Source Sans Pro Light";
+}
+.boxv p {
+  font-size: 19px;
+  font-family: "Source Sans Pro Light";
+  line-height: 1.8;
+}
+
+/*MAP*/
+.wrapperm {
+  width: 100%;
+  height: 1050px;
+}
+
+#map {
+  position: relative;
+  margin-top: 12%;
+  width: 100%;
+  height: 600px;
+}
+
+/*CONTACT*/
+.wrapperc {
+  width: 100%;
+  height: 1000px;
+}
+
+.outsidec {
+  width: 100%;
+  margin: 3% 0 2% 0;
+  padding: 3% 0 3% 0;
+  background-color: #d5c6ac;
+}
+
+.outsidec h1 {
+  margin-left: 5%;
+}
+
+.boxc {
+  width: 37%;
+  margin: 2% 2% 0 4%;
+  padding: 2% 3% 5% 3%;
+  display: inline-table;
+  border: 1px solid black;
+}
+
+.boxc2 {
+  width: 37%;
+  margin: 2% 2% 0 4%;
+  padding: 2% 3% 5% 3%;
+  display: inline-table;
+  border: 1px solid black;
+}
+
+#contact__information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+label {
+font-size: 19px;
+font-family: "Source Sans Pro Light";
+}
+
+textarea {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+.submit, .submit2 {
+  width: 40%;
+}
+
+.incorrect {
+  color: red;
+}
+
+/*Creators*/
+.wrappercr {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+.outsidecr {
+  width: 100%;
+  margin: 2% 0 2% 0;
+  padding: 4% 0 3% 18%;
+  background-color: #d5c6ac;
+}
+.image {
+  width: 15%;
+  margin: 1% 4% 2% 4%;
+  display: inline-table;
+}
+.wrappercr img {
+  width: 100%;
+
+}
+
+
+
+/*
+form {
+  padding: 20px 0;
+}
+
+.incorrect {
+  color: red;
+}
+
+form h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+form label {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .status {
+  padding-top: 20px;
+}
+
+form button {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+*/
+
+/*Responsiivinen*/
+@media (max-width:800px) {
+  .toggle {
+    display: block;
+  }
+
+  .toggle p {
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;;
+    float: left;
+    margin: 0;
+    padding: 7px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro Light";
+  }
+
+  .navigation li {
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+
+  .navigation li.name {
+    display: none;
+  }
+
+  .responsive li {
+    display: block;
+  }
+
+  #map {
+    margin-top: 45%;
+    height: 300px;
+  }
+
+  .wrapperm {
+    height: 700px;
+  }
+}
+
+
+
+
+
+
+
+
+
+#video {
+  padding-top: 50px;
+}
+
+
+
+/* SMOOTHIE SEARCH  */
+button {
+  color: #555;
+  background: none;
+  border: none;
+  font-family: "Source Sans Pro Light";
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgb(217, 217, 217);
+}
+
+input {
+  color: #555;
+  background: none;
+  border: none;
+  font-family: "Source Sans Pro Light";
+  font-size: 20px;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgb(217, 217, 217);
+}
+
+textarea {
+  color: #555;
+  background: none;
+  border: none;
+  font-family: "Source Sans Pro Light";
+  font-size: 20px;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid rgb(217, 217, 217);
+}

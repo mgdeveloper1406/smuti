@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/js/responsive.js"></script>
+    <title>Smoothie Recipe</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="toggle"><p>Smoothiebar</p><i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <li class="name">Smoothiebar</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="smoothierecipes.html">Smoothiebar</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapperp">
+        <div class="outsidep">
+            <div class="boxp">
+                <h1>We are sorry, but this recipe is still under work...<br>
+                </h1>
+                <p></p>
+
+                <div class="toinen">
+                <ul>
+
+                </ul>
+                </div>
+
+                <div class="new"></div> </div>
+                <div class="kuva"></div>
+                <br><br><br><br>
+
+        </div>
+    </div>
+
+    <div id ="footer">
+        SMOOTHIEBAR  <br>
+        Anita, Michael & Ann-Mari<br>
+        Copyright &copy; 2019, All Rights Reserved <br>
+    </div>
+    <script src="js/responsive.js"></script>
+<script>
+        var title, ingredients, link, imag;
+
+        var queryString = decodeURIComponent(window.location.search);
+        queryString = queryString.substring(1);
+        var queries = queryString.split("&");
+
+
+        title = queries[0].substr(6);
+        ingredients = queries[1].substr(6);
+        link = queries[2].substr(6);
+        imag = queries[3].substr(6);
+
+        newIngredients = ingredients.split(",");
+
+        var paikka = document.querySelector(".boxp");
+        var para = paikka.querySelector("h1");
+        para.innerHTML = title + "<br>";
+        var uusi= document.querySelector(".new");
+        uusi.innerHTML = `<a class="button" target="_blank" href = ${link}>Learn more</a>`;
+        var imgplace = document.querySelector(".kuva");
+        imgplace.innerHTML = `<img src=${imag}>`;
+
+        for (var k = 0; k < newIngredients.length; k++) {
+            const second = document.querySelector(".toinen");
+            const listaus = second.querySelector("ul");
+            const lista = document.createElement('li');
+            lista.innerHTML = newIngredients[k];
+            listaus.appendChild(lista);
+        }
+/*
+        for (var j = 0; j < newIngredients.length; j++) {
+            const listaus = uusi.querySelector("ul");
+            const lista = listaus.createElement("li");
+            listaus.appendChild(lista);
+            lista.innerHTML = newIngredients[j];
+        }
+
+
+
+
+        document.write(title + "<br>");
+
+        document.write("<ul>");
+        for (var i = 0; i < newIngredients.length; i++) {
+            document.write(`<li>${newIngredients[i]}</li>`)
+        }
+        document.write("</ul>");
+        document.write(`<a href = ${link}>${link}</a>`);
+
+*/
+
+    </script>
+</body>
+
+</html>

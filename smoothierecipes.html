@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Smoothie Site</title>
+  <!-- <link href="stylesheet" href="css/index.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+
+  <!-- <script src="js/reseptinHaku.js"></script> -->
+</head>
+
+<body>
+<div class="navigation">
+    <div class="toggle"><p>Digitaalinen media</p><i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+        <li class="name">Smoothiebar</li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="smoothierecipes.html">Smoothiebar</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</div>
+
+<div class="wrappers">
+     <div class="outsides">
+          <h1>SMOOTHIEBAR</h1>
+           <p>Find the Best Smoothie Recipes!
+                  </p>
+     </div>
+</div>
+
+<div id="wrapper">
+<div id="reseptinhaku">
+    <div id="popular"></div>
+        <div id="haku">
+        <input id="haettuarvo" type="text" placeholder="Look for a smoothie!" />
+        <button id="hakunappi">Search</button>
+
+    </div>
+    </div>
+    <br>
+    <div id="smoothielista">
+      <ul></ul>
+    </div>
+
+</div>
+
+    <div id ="footer">
+      SMOOTHIEBAR  <br>
+      Anita, Michael & Ann-Mari<br>
+      Copyright &copy; 2019, All Rights Reserved <br>
+    </div>
+
+  <script src="js/smoothieSearch.js"></script>
+  <script src="js/responsive.js"></script>
+</body>
+
+</html>
