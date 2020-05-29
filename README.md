@@ -11,7 +11,7 @@ The fetch() method takes the path to the resource you want to fetch and returns 
 The json() method gets the JSON body content from the response. 
 Edamam Recipe Search API provides recipes submitted in JSON format according to the specific api documentation.
 
-## Smoothiebar website image
+## Smoothiebar website images
 ![Screenshot](images/smoothiebar.JPG)
 
 ![Screenshot](images/search-option.JPG)
